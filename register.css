@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size:larger;
+  background: linear-gradient(to right, 
+  #ffcedf 0%, 
+  transparent 25%, 
+  transparent 75%, 
+   #ffcedf 100%);
+  background-attachment: fixed;
+}
+
+form {
+background-color: rgba(255, 255, 255, 0.95);
+width: 450px;
+margin: 50px auto;
+padding: 20px;
+border-radius: 22px;
+box-shadow: 0 0 20px rgba(211, 62, 94, 0.4);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  background-color: #fff0f5;
+  font-size: 15px;
+  font-weight: 500;  
+  color: #333;   
+}
+
+button {
+  padding: 12px 22px;
+  background-color:#f682ab; 
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 15px auto; 
+
+
+}
+
+button:hover {
+  background-color:#f08aae
+}
+
+h2.form-title {
+  color:#000000;
+}
+
+.social-buttons {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.social-btn img {
+  width: 40px;
+
+  margin: 0 10px;
+  transition: transform 0.2s;
+}
+
+.social-btn img:hover {
+  transform: scale(1.2);
+}
+
+#checkbox {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#checkbox a {
+  color: #c2185b;
+  text-decoration: none;
+}
+
+#checkbox a:hover {
+  text-decoration: underline;
+}
+
+#p2 {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+#login-link {
+  color: #c2185b;
+  text-decoration: none;
+}
+
+#login-link:hover {
+  text-decoration: underline;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  width: 150px; 
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  flex: 1; }

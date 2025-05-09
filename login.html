@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <div class="login">
+    <h1>
+      <img src="lognicon.png" alt="Login Icon" style="width: 28px; vertical-align: middle; margin-right: 8px;">
+      Login
+    </h1>
+
+    <form id="loginForm">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter your name" class="input-field">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" class="input-field">
+
+      <button id="login" type="button">Login</button>
+
+      <div class="forgot-password">
+        <a href="#">Forget password?</a>
+        <div class="register-link" style="margin-top: 15px;">
+          <span>Don't have an account? </span>
+          <a href="register.html">Register Here</a>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("login").addEventListener("click", function(event) {
+      event.preventDefault(); 
+      window.location.href = "home.html";
+    });
+  </script>
+
+</body>
+</html>

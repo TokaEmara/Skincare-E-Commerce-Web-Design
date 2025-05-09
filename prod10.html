@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom - Product</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="centered-div">
+        <img src="lipmask.jpg" alt="Product Image" class="product-image">
+        <div class="product-info">
+            <div class="icon-links">
+                <a href="home.html" class="back-arrow"><img src="backarrow.png" alt="Back Arrow"></a>
+                <a href="#" class="cart"><img src="cart.png" alt="Cart"></a>
+            </div>
+            <h1 class="product-name">Laneige - Lip Sleeping Mask (BERRY)</h1>
+            <p class="product-description">a hydrating overnight treatment enriched with antioxidants and vitamin C to nourish and soothe dry lips.
+                It is a luxurious solution for chapped lips. It leaves them soft and revitalized by morning. </p>
+
+            <h3 class="product-price"> was <del>$59.99</del></h3>
+            <h2 class="product-price"> now $57</h2>
+            <label for="quantity">Quantity:</label>
+
+            <select id="quantity" name="quantity" class="quantity-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <!--button with an onclick event -->
+            <button id="add-to-cart" class="btn add-to-cart"><b>Add to Cart</b></button>
+            <button class="btn buy-now"><b>Buy Now</b></button>
+
+            <div class="delivery-info">
+                <h3>Delivery Info:</h3>
+                <p><b>7$</b> shipping and import fees. <br>Estimated delivery time: 3-5 business days.<br><b>Free shipping</b> on orders over $50. <br> Shipping all over the world. </p>
+            </div>
+
+        </div>
+        <div class="reviews-section">
+            <h3>Top Customer Reviews:</h3>
+            <div class="review"> <b>Blossom user:</b>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <p>This lip mask is a lifesaver! my lips feel so soft and hydrated after just one use!</p>
+            </div>
+            <div class="review"> <b>Blossom user:</b>
+                <span class="stars">⭐⭐⭐</span>
+                <p>It feels silky and not sticky at all.</p>
+            </div>
+            <div class="review"><b>Blossom user:</b>
+                <span class="stars">⭐⭐⭐⭐</span>
+                <p>I love the sweet berry scent, and it keeps my lips moisturized all night.</p>
+            </div>
+            <div class="review"><b>Blossom user:</b>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <p>A little goes a long way.. this jar lasts forever and works like a dream!</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // js - update button text
+        document.getElementById('add-to-cart').addEventListener('click', function() {
+            this.innerHTML = '<b>Added to Cart</b>';
+        });
+    </script>
+</body>
+</html>

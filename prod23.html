@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom - Product</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="centered-div">
+        <img src="lotion.jpg" alt="Product Image" class="product-image">
+        <div class="product-info">
+            <div class="icon-links">
+                <a href="home.html" class="back-arrow"><img src="backarrow.png" alt="Back Arrow"></a>
+                <a href="#" class="cart"><img src="cart.png" alt="Cart"></a>
+            </div>
+            <h1 class="product-name">Nécessaire - <br> The Body Lotion</h1>
+            <p class="product-description">a daily moisturizer infused with 5 signal peptides, providing hydration and nourishment for healthier skin. 
+                Formulated with niacinamide to support the skin barrier and improve texture.
+            </p>
+
+            <h3 class="product-price"> was <del>$30.07</del></h3>
+            <h2 class="product-price"> now $28</h2>
+            <label for="quantity">Quantity:</label>
+
+            <select id="quantity" name="quantity" class="quantity-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <!--button with an onclick event -->
+            <button id="add-to-cart" class="btn add-to-cart"><b>Add to Cart</b></button>
+            <button class="btn buy-now"><b>Buy Now</b></button>
+
+            <div class="delivery-info">
+                <h3>Delivery Info:</h3>
+                <p><b>7$</b> shipping and import fees. <br>Estimated delivery time: 3-5 business days.<br><b>Free shipping</b> on orders over $50. <br> Shipping all over the world. </p>
+            </div>
+
+        </div>
+        <div class="reviews-section">
+            <h3>Top Customer Reviews:</h3>
+            <div class="review"> <b>Blossom user:</b>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <p>Keeps my skin hydrated all day! Love how lightweight and non-sticky it feels.</p>
+            </div>
+            <div class="review"> <b>Blossom user:</b>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <p>My skin texture has improved so much! really soft and smooth now!</p>
+            </div>
+            <div class="review"><b>Blossom user:</b>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <p>non-irritable for sensitive skin and lightweight.</p>
+            </div>
+            <div class="review"><b>Blossom user:</b>
+                <span class="stars">⭐⭐⭐⭐</span>
+                <p>the peptides make a difference ig. my skin looks healthier now.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // js - update button text
+        document.getElementById('add-to-cart').addEventListener('click', function() {
+            this.innerHTML = '<b>Added to Cart</b>';
+        });
+    </script>
+</body>
+</html>

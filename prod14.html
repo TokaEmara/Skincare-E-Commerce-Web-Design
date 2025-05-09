@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom - Product</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="centered-div">
+        <img src="kor.jpg" alt="Product Image" class="product-image">
+        <div class="product-info">
+            <div class="icon-links">
+                <a href="home.html" class="back-arrow"><img src="backarrow.png" alt="Back Arrow"></a>
+                <a href="#" class="cart"><img src="cart.png" alt="Cart"></a>
+            </div>
+            <h1 class="product-name">Kor - Face Oil</h1>
+            <p class="product-description">a premium face oil suitable for all skin types, formulated to nourish and hydrate the skin. <br>
+                Packed with natural ingredients, it delivers visible radiance and promotes a healthy skin barrier.
+                 Its lightweight texture ensures deep absorption without leaving a greasy finish.
+            </p>
+
+            <h3 class="product-price"> was <del>$40.68</del></h3>
+            <h2 class="product-price"> now $38</h2>
+            <label for="quantity">Quantity:</label>
+
+            <select id="quantity" name="quantity" class="quantity-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <!--button with an onclick event -->
+            <button id="add-to-cart" class="btn add-to-cart"><b>Add to Cart</b></button>
+            <button class="btn buy-now"><b>Buy Now</b></button>
+
+            <div class="delivery-info">
+                <h3>Delivery Info:</h3>
+                <p><b>7$</b> shipping and import fees. <br>Estimated delivery time: 3-5 business days.<br><b>Free shipping</b> on orders over $50. <br> Shipping all over the world. </p>
+            </div>
+
+        </div>
+        <div class="reviews-section">
+            <h3>Top Customer Reviews:</h3>
+            <div class="review"> <b>Blossom user:</b>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <p>This rejuvenation oil has transformed my dry skin, giving me a beautiful glow!</p>
+            </div>
+            <div class="review"> <b>Blossom user:</b>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <p>It feels luxurious and absorbs quickly. I love how soft my skin feels.</p>
+            </div>
+            <div class="review"><b>Blossom user:</b>
+                <span class="stars">⭐⭐⭐⭐</span>
+                <p>I love how all the ingredients are natural.</p>
+            </div>
+            <div class="review"><b>Blossom user:</b>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <p>tested it on my body as well. It's impressive and a little goes a long way!</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // js - update button text
+        document.getElementById('add-to-cart').addEventListener('click', function() {
+            this.innerHTML = '<b>Added to Cart</b>';
+        });
+    </script>
+</body>
+</html>
