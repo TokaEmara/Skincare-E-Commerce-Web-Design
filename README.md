@@ -20,7 +20,7 @@ This project was my first web design experience, where I led a talented team in 
 ## 📹 Demo  
 
 🎥 **Project Walkthrough Video**  
-👉 [Click here to watch the Demo]([https://github.com/TokaEmara/Skincare-E-Commerce-Web-Design/blob/main/promo.mp4](https://drive.google.com/file/d/1YzO7c8L1mxaDBz-6ZkvGvfOtJh-mLXxB/view?usp=sharing))  
+👉 [Click here to watch the Demo](https://drive.google.com/uc?export=download&id=1YzO7c8L1mxaDBz-6ZkvGvfOtJh-mLXxB)  
 <video src="promo.mp4" controls width="600"></video>
 
 ## 👩‍💻 Team Members  
